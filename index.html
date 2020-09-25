@@ -13,7 +13,7 @@
         	}
             .submit {
                 background-color: lightblue;
-                display: block;
+                display: inline-block;
                 margin-top: 2px;
             }
             #textBox {
@@ -22,12 +22,16 @@
                 margin-top: 20%;   
             }
             .center {
-            margin-left: auto;
-            margin-right: auto;
+            	margin-left: auto;
+            	margin-right: auto;
             }
             .rounded {
-            border-radius: 10px;
+            	border-radius: 10px;
             }
+            #container {
+            	text-align: center;
+            }
+
         </style>
     </head>
     <body>
@@ -35,8 +39,10 @@
         <a id="nav" href="file:///C:/Users/joshb/Downloads/search/search/advanced.html">Advanced Search </a>
         <form action="https://google.com/search">
             <input type="text" name="q" id="textBox" class="center rounded">
-        	<input type="submit" value="Google Search" class="center submit rounded">
-        	<input name="btnI" type="submit" value="I'm Feeling Lucky" class="center submit rounded">       
+            <div id="container">
+        		<input type="submit" value="Google Search" class="submit">
+        		<input name="btnI" type="submit" value="I'm Feeling Lucky" class="submit">  
+        	</div>    
         </form>
     </body>
 </html>
